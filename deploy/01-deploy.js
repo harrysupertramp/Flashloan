@@ -26,7 +26,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     from: deployer,
     args: [],
     log: true,
-    args: [""], // this "Chainfy" is _contractName for the Constructor
+    args: ["arg"], // this "Chainfy" is _contractName for the Constructor
     waitConfirmations: network.config.blockConfirmations || 1,
   }) 
   verify
